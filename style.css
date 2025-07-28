@@ -38,6 +38,7 @@
 
 .nav-link:hover {
     color: #0d2a4b;
+    text-decoration: underline;
 }
 
 .profile-image {

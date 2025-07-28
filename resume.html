@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoria's Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+            padding: 20px;
+        }
+        .nav-link {
+            color: #065084;
+            text-decoration: none;
+            font-size: 24px;
+        
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
 </head>
 <body>
-    <header class="hello">
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+        </nav>
+        </div>
         <div class="hello-content">
             <h1>Victoria Joy M'bwana Resume</h1>
             <p>Electronics and Computer Engineer</p>
-            <a href="index.html">
-                <button class="resume-button">Back to my Portfolio</button>
-            </a>
         </div>
-    </header>
+    </div>
 </body>
 </html>
