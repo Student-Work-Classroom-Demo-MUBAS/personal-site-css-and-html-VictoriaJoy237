@@ -98,15 +98,10 @@
     color: #003366;
 }
 
-.section-heading h1 {
+.section-heading {
     text-align: center;
     font-size: 36px;
     margin: 10px ;
-}
-.section-heading p {
-    text-align: center;
-    font-size: 20px;
-    margin: 10px;
 }
 
 /* Responsive Flex layout for project cards */
@@ -126,12 +121,13 @@
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
 }
 
+/* Project Card Hover Effect for it to scale */
 .project-card:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;   
 }
 
 .project-image {
