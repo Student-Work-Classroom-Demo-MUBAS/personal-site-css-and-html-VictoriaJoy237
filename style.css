@@ -1,0 +1,33 @@
+.hello{
+    background: linear-gradient(to right, #ffffff, #cce7ff);
+    color: #003366;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 20px;
+}
+
+.hello-content {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resume-button {
+    background-color: #065084;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.resume-button:hover {
+    background-color: #0d2a4b;
+}
+
+img {
+    width: 3.4cm;
+    height: 4cm;
+    border-radius: 50%;
+}
