@@ -4,103 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoria's Resume</title>
-    <style>
-        .nav {
-            display: flex;
-            justify-content: right;
-            gap: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            margin-right: 20px;
-        }
-        .nav-link {
-            color: #065084;
-            text-decoration: none;
-            font-size: 24px;
-        
-        }
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            background: linear-gradient(to left, #d4f0f8, #e7f3fa);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 30px 20px;
-    
-        }
-
-         .resume-image {
-            width: 26vw;
-            height: 28vw;
-            border-top-right-radius: 50%; 
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 40%;
-            overflow: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            display: flex;
-    
-        } 
-
-
-        .resume-image img {
-            width: 26vw;
-            height: 28vw;
-            position: left;
-            object-fit: cover;
-            display: flex;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            font-size: 30px;
-            color: #064c7a;;
-        }
-
-        .info h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            align-items: center;
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-family: sans-serif;
-        }
-
-        .contact-items {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            align-content: center;
-            font-size: 25px;
-            gap: 10px;
-            color: #064c7a;
-        }
-        .contact-items .icon {
-            width: 30px;
-            height: 30px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="nav">
+        <nav class="nav-content">
             <a href="index.html" class="nav-link">Home</a>
             <a href="#education" class="nav-link">Education</a>
             <a href="#experience" class="nav-link">Experience</a>
@@ -131,6 +39,30 @@
                     <span>Victoria Joy M'bwana</span>
                 </div>
 
+            </div>
+        </section>
+
+        <section id="education" >
+            <div class="section-heading"> <h1>Education</h1> </div>
+
+            <div class="web-sections">
+                <div class="web-cards">
+                    <h2>Malawi University of Business and Apllied Sciences (MUBAS)</h2>
+                    <p>BSc in Engineering of Electronics and Compueter Engineering</p>
+                    <p> 2021-Present</p>
+                </div>
+
+                <div class="web-cards">
+                    <h2>Lilongwe Girls Secondary School(LLGIS)</h2>
+                    <p>Malawi School Leaving Certificate of Education(MSCE)</p>
+                    <p> 2015-2019</p>
+                </div>
+
+                <div class="web-cards">
+                    <h2>Nsanjama PVT Primary School (NPPS)</h2>
+                    <p>Primary School Leaving Certificate of Education(PSLCE)</p>
+                    <p> 2008-2015</p>
+                </div>
             </div>
         </section>
     </div>

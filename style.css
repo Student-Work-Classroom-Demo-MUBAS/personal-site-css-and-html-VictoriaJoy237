@@ -5,7 +5,7 @@
     background-position: center;
     color: #003366;
     text-align: center;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 50px 20px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 /* Resume and Download Button Styles */
-.resume-button {
+.web-buttons {
     background-color: #065084;
     color: white;
     padding: 10px 20px;
@@ -65,7 +65,7 @@
     font-size: 20px;
 }
 
-.resume-button:hover {
+.web-buttons:hover {
     background-color: #0d2a4b;
 }
 
@@ -74,20 +74,6 @@
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-.download-button {
-    background-color: #065084;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.download-button:hover {
-    background-color: #0d2a4b;
 }
 
 /* Projects Section Styles */
@@ -106,7 +92,7 @@
 }
 
 /* Responsive Flex layout for project cards */
-.project-list {
+.web-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,7 +100,7 @@
     padding: 2rem;
 }
 
-.project-card {
+.web-cards {
     width: 500px;
     border: 3px solid #065084;
     background: #ffffff;
@@ -126,7 +112,7 @@
 }
 
 /* Project Card Hover Effect for it to scale */
-.project-card:hover {
+.web-cards:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;   
 }
@@ -137,15 +123,75 @@
     border-radius: 10px;
 }
 
-.project-button {
-    background-color: #065084;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-}
-.project-button:hover {
-    background-color: #0d2a4b;
-}
+.container {
+     background: linear-gradient(to left, #d4f0f8, #e7f3fa);
+     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+        }
+
+  .resume-image {
+        width: 26vw;
+        height: 24vw;
+        border-top-right-radius: 50%; 
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 40%;
+        overflow: hidden;
+         position: absolute;
+         left: 0;
+         top: 0;
+         display: flex;
+             } 
+
+
+ .resume-image img {
+         width: 26vw;
+         height: 24vw;
+         position: left;
+        object-fit: cover;
+        display: flex;
+        }
+
+.info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            font-size: 30px;
+            color: #003366;
+        }
+
+  .info h1 {
+        font-size: 40px;
+         margin-bottom: 10px;
+        }
+    
+ .contact-icons {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     align-items: center;
+     padding: 10px 20px;
+     margin-top: 20px;
+    font-family: sans-serif;
+        }
+
+ .contact-items {
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     align-content: center;
+     font-size: 25px;
+     gap: 10px;
+        }
+
+ .contact-items .icon {
+         width: 30px;
+         height: 30px;
+        }
