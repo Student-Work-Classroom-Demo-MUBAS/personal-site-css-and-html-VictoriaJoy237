@@ -87,8 +87,9 @@
 
 .section-heading {
     text-align: center;
-    font-size: 36px;
-    margin: 10px ;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* Responsive Flex layout for project cards */
@@ -96,8 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 2rem;
+    gap: 10px;
 }
 
 .web-cards {
@@ -142,17 +142,17 @@
         border-bottom-right-radius: 50%;
         border-bottom-left-radius: 40%;
         overflow: hidden;
-         position: absolute;
-         left: 0;
-         top: 0;
-         display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
              } 
 
 
  .resume-image img {
-         width: 26vw;
-         height: 24vw;
-         position: left;
+        width: 26vw;
+        height: 24vw;
+        position: left;
         object-fit: cover;
         display: flex;
         }
@@ -195,3 +195,27 @@
          width: 30px;
          height: 30px;
         }
+
+.experience{
+    background: linear-gradient(to right, rgba(227, 236, 245, 0.8), rgba(255, 255, 255, 0.8));
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003366;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.experience h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.duties{
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    align-content: center;
+
+}
