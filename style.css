@@ -3,7 +3,7 @@
     background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    color: #003366;
+    color: #002346;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     padding: 50px 20px;
@@ -31,13 +31,13 @@
 }
 
 .nav-link {
-    color: #065084;
+    color: #00253f;
     text-decoration: none;
     font-size: 24px;
 }
 
 .nav-link:hover {
-    color: #0d2a4b;
+    color: #010c1a;
     text-decoration: underline;
 }
 
@@ -56,7 +56,7 @@
 
 /* Resume and Download Button Styles */
 .web-buttons {
-    background-color: #065084;
+    background-color: #04375c;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -67,7 +67,7 @@
 }
 
 .web-buttons:hover {
-    background-color: #0d2a4b;
+    background-color: #021429;
 }
 
 .hello-buttons {
@@ -83,7 +83,7 @@
     background: linear-gradient(to left, #ffffff, #cbe6f8);
     padding: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
-    color: #003366;
+    color: #021931;
 }
 
 .section-heading {
@@ -133,7 +133,7 @@
     justify-content: center;
     padding: 30px 20px;
     font-family: 'Times New Roman', Times, serif;
-    color: #003366;
+    color: #011e3b;
         }
 
   .resume-image {
@@ -164,7 +164,7 @@
             align-items: center;
             padding: 20px;
             font-size: 30px;
-            color: #003366;
+            color: #001c38;
         }
 
   .info h1 {
@@ -204,7 +204,7 @@
     border-radius: 10px;
     padding: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
-    color: #003366;
+    color: #011c36;
     font-size: 30px;
     text-align: center;
     align-items: center;
@@ -225,7 +225,7 @@
 
 #skills{
     text-align: center;
-    color: #003366;
+    color: #00162c;
     font-size: 30px;
 }
 
@@ -252,4 +252,49 @@
 
 .about-content h2{
     font-size: 60px;
+}
+
+#contact{
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #daf0fad7;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #022242;
+}
+
+
+form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+form input,
+form textarea{
+    width: 80%;
+    padding: 1rem;
+    border: 2px solid #b5dcfc;
+    font-size: 1rem;
+    resize: vertical;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #011625;
+}
+
+form button{
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #023b63;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+form button:hover{
+    background-color: #005fa3;
 }
