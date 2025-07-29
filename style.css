@@ -255,46 +255,65 @@
 }
 
 #contact{
-    max-width: 60%;
+    width:100%;
     margin: 2rem auto;
     padding: 1.5rem;
-    background: #daf0fad7;
+    background: #f8fbfc;
     border-radius: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: #022242;
 }
 
-
-form label{
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-form input,
-form textarea{
-    width: 80%;
-    padding: 1rem;
-    border: 2px solid #b5dcfc;
-    font-size: 1rem;
-    resize: vertical;
-    border-radius: 20px;
-    font-size: 25px;
-    color: #011625;
-}
-
-form button{
-    margin-top: 1.5rem;
-    padding: 0.8rem 1.2rem;
-    background-color: #023b63;
-    border-radius: 6px;
-    cursor: pointer;
+.contact-form{
+    width: 52%;
+    margin:auto;
+    padding: 20px;
+    background: linear-gradient(#c3e0f7c5,#9dd1f7a1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     font-family: 'Times New Roman', Times, serif;
+        }
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+        }
+
+.form-group label{
+    width: 100px;
     font-size: 30px;
+}
+
+.form-group input,
+.form-group textarea{
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #1165b9;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #00162c;
+}
+
+.message-box textarea{
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button{
+    align-self: flex-start;
+    background-color: #023d68;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     color: #ffffff;
 }
 
-form button:hover{
+.contact-form button:hover{
     background-color: #005fa3;
 }
