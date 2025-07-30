@@ -168,26 +168,25 @@
 }
 
 /* Responsive Flex layout for project cards */
-.web-sections {
+.education-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 
-.web-cards {
+.education-cards {
     width: 500px;
-    border: 4px solid #0b65a5;
+    border: 2px solid #0c3757;
     background: #ffffff;
     border-radius: 20%;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 23px;
 }
 
 /* Project Card Hover Effect for it to scale */
-.web-cards:hover {
+.education-cards:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;   
 }
@@ -253,22 +252,39 @@
          height: 60px;
         }
 
-.experience{
-
-    border-radius: 10px;
-    padding: 10px 10px;
+.experience-section{
+    padding:60px 20px;
     font-family: 'Times New Roman', Times, serif;
     color: #011c36;
     font-size: 30px;
     text-align: center;
-    align-items: center;
 }
 
-.experience h2{
-    font-size: 35px;
-    margin-bottom: 5px;
+.experience-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: centre;
+    gap:40px;
 }
 
+.experience-card{
+    background-color: #fffffffa;
+    border: 2px solid #001c38;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.experience-card:hover{
+    transform: scale(1.06);
+}
+
+.experience-card ul{
+    list-style-type:circle;
+    padding-left: 20px;
+    text-align: left;
+}
 
 .skills-section{
     text-align: center;
@@ -291,7 +307,7 @@
 }
 
 .skill img{
-    width:200px;
+    width:160px;
     height:150px;
     margin-bottom: 20px;
 }
