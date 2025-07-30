@@ -199,7 +199,7 @@
 }
 
 .container {
-     background: linear-gradient(to left, #d4f0f8, #e7f3fa);
+     background: linear-gradient(to left, #91c5f791, #f9fbfcbe,#bdd8f3c9);
      width: 100%;
     height: 100%;
     display: flex;
@@ -210,28 +210,7 @@
     color: #011e3b;
         }
 
-  .resume-image {
-        width: 26vw;
-        height: 24vw;
-        border-top-right-radius: 50%; 
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 60%;
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: flex;
-        border: 10px solid #f3f5f7;
-             } 
-
-
- .resume-image img {
-        width: 26vw;
-        height: 24vw;
-        position: left;
-        object-fit: cover;
-        display: flex;
-        }
+  
 
 .info {
             display: flex;
@@ -270,8 +249,8 @@
         }
 
  .contact-items .icon {
-         width: 30px;
-         height: 30px;
+         width: 70px;
+         height: 60px;
         }
 
 .experience{
@@ -290,26 +269,35 @@
     margin-bottom: 5px;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    width:90%;
-}
 
-.list{
-    list-style-type: disc;
-    list-style-position: inside;
-    text-align: center;
-    align-content: center;
-
-}
-
-#skills{
+.skills-section{
     text-align: center;
     color: #00162c;
-    font-size: 30px;
-    background-size: cover;
+    font-size: 20px;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:20px;
+}
+
+.skill{
+    background-color: #dce9f7b4;
+    border-radius: 15px;
+    padding:25px;
+    box-shadow: 8px 16px rgba(9, 2, 34, 0.411);
+}
+
+.skill img{
+    width:200px;
+    height:150px;
+    margin-bottom: 20px;
+}
+
+.skill:hover{
+    transform: scale(1.09);
 }
 
 #about{
