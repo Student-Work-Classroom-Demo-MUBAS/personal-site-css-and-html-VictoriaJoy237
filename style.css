@@ -348,16 +348,21 @@
 }
 
 .contact-form{
-    width: 52%;
+    width: 62%;
+    height: 60%;
     margin:auto;
     padding: 20px;
-    background: linear-gradient(#c3e0f7c5,#9dd1f7a1);
+    background: linear-gradient(#eaf1f78f,#c5e5fc85);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #00162c;
         }
+.contact-form:hover{
+    transform: scale(1.05);
+}
 
 .form-group{
     display: flex;
@@ -375,10 +380,10 @@
 .form-group textarea{
     flex-grow: 1;
     padding: 10px;
-    border: 2px solid #1165b9;
+    border: 2px solid #02172c;
     border-radius: 6px;
     font-size: 1rem;
-    color: #00162c;
+    color: #041627;
 }
 
 .message-box textarea{
@@ -388,15 +393,15 @@
 
 .contact-form button{
     align-self: flex-start;
-    background-color: #023d68;
+    background-color: #021835be;
     padding: 10px 20px;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #ffffff;
 }
 
 .contact-form button:hover{
-    background-color: #005fa3;
+    background-color: #01192b;
 }
