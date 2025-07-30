@@ -1,4 +1,4 @@
-/* Hero Section Styles */
+/* Hero Section Styles.This is the header section*/
 .hello{
     background-image: url('images/hero-bg.jpg');
     background-size: cover;
@@ -7,9 +7,10 @@
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     padding: 50px 20px;
+    
 }
 
-/* Semi-transparent Overlay */
+/* Semi-transparent Overlay for the header section in index.html */
 .overlay {
     background: linear-gradient(to right, rgba(158, 203, 247, 0.733), rgba(250, 251, 252, 0.63));
     width: 100%;
@@ -17,9 +18,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;;
+    border-radius: 20px;
 }
 
-/*Navigation Bar*/
+/*Navigation Bar for both resume and index.*/
 .nav-content {
     position: sticky;
     display: flex;
@@ -56,11 +58,11 @@
 
 /* Resume and Download Button Styles */
 .web-buttons {
-    background-color: #04375c;
+    background-color: #02243dc0;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -77,14 +79,86 @@
     margin-top: 20px;
 }
 
-/* Projects Section Styles */
 /* Main Projects Section */
 #projects {
-    background: linear-gradient(to left, #ffffff, #cbe6f8);
-    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
     font-family: 'Times New Roman', Times, serif;
-    color: #021931;
 }
+
+.projects-container {
+    display: flex;
+    gap:40px;
+    
+}
+
+.projects-container h1{
+  flex: 1 1 60%;
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 5vw;
+  color: #021936;
+}  
+
+.project-cards{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.project-card{
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #a6ccf059;
+  border: 2px solid #033658;
+  border-radius: 30px;
+  box-shadow: 40px 20px rgba(35, 102, 248, 0.253);
+  font-family: 'Times New Roman', Times, serif;
+  color: #00162c;
+  font-size: 30px;
+  width: 600px;
+}
+
+.project-card:hover {
+  transform: scale(1.09);
+}
+
+.card-left {
+  transform: translate(-100px, -10px);
+}
+
+.card-right {
+  transform: translate(20px, -30px);
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.projects-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+    font-size: 1rem;
+  }}
 
 .section-heading {
     text-align: center;
@@ -119,8 +193,8 @@
 }
 
 .project-image {
-    width: 150px;
-    height: 145px;
+    width: 100px;
+    height: 105px;
     border-radius: 10px;
 }
 
@@ -141,12 +215,13 @@
         height: 24vw;
         border-top-right-radius: 50%; 
         border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 40%;
+        border-bottom-left-radius: 60%;
         overflow: hidden;
         position: absolute;
         left: 0;
         top: 0;
         display: flex;
+        border: 10px solid #f3f5f7;
              } 
 
 
@@ -200,7 +275,7 @@
         }
 
 .experience{
-    background: linear-gradient(to right, rgba(227, 236, 245, 0.8), rgba(255, 255, 255, 0.8));
+
     border-radius: 10px;
     padding: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -215,6 +290,13 @@
     margin-bottom: 5px;
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width:90%;
+}
+
 .list{
     list-style-type: disc;
     list-style-position: inside;
@@ -227,6 +309,7 @@
     text-align: center;
     color: #00162c;
     font-size: 30px;
+    background-size: cover;
 }
 
 #about{
