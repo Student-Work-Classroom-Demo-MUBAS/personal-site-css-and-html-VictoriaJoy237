@@ -5,7 +5,7 @@
     background-position: center;
     color: #002346;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     padding: 50px 20px;
     
 }
@@ -65,7 +65,7 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .web-buttons:hover {
@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 60px 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .projects-container {
@@ -119,7 +119,7 @@
   border: 2px solid #033658;
   border-radius: 30px;
   box-shadow: 40px 20px rgba(35, 102, 248, 0.253);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   color: #00162c;
   font-size: 30px;
   width: 600px;
@@ -160,6 +160,12 @@
     font-size: 1rem;
   }}
 
+  .project-image {
+    width: 100px;
+    height: 105px;
+    border-radius: 10px;
+}
+
 .section-heading {
     text-align: center;
     font-size: 30px;
@@ -191,14 +197,8 @@
     transition: transform 0.3s ease;   
 }
 
-.project-image {
-    width: 100px;
-    height: 105px;
-    border-radius: 10px;
-}
-
-.container {
-     background: linear-gradient(to left, #91c5f791, #f9fbfcbe,#bdd8f3c9);
+.resume-container {
+     background: linear-gradient(to left, #ebf0f591, #f9fbfcbe,#c7def5c9);
      width: 100%;
     height: 100%;
     display: flex;
@@ -212,12 +212,12 @@
   
 
 .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            font-size: 30px;
-            color: #001c38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    color: #001c38;
         }
 
   .info h1 {
@@ -244,7 +244,7 @@
      font-size: 25px;
      gap: 10px;
      font-size: 30px;
-     font-family: 'Times New Roman', Times, serif;
+     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
         }
 
  .contact-items .icon {
@@ -254,7 +254,7 @@
 
 .experience-section{
     padding:60px 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     color: #011c36;
     font-size: 30px;
     text-align: center;
@@ -316,38 +316,125 @@
     transform: scale(1.09);
 }
 
+/*===About Me Scetion Styling===*/
 #about{
-    color: #012850;
+    background: #f8fafc;
+    position: relative;
+    padding: 5rem 0;
+}
+
+.about-heading{
+    font-size: 50px;
+    border-bottom: 3px solid #02233a;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 2rem;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    color: ;  
+}
+
+/*Display before about*/
+#about::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(95, 143, 206, 0.329));
+    z-index: 0; /*Sits behind content*/
+}
+
+.about-tittle h2{
+    font-size:100px ;
+}
+
+/*Layout grid for the about me section*/
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap:4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/*===Image Block===*/
+.about-image{
     background-image: url("images/about.jpg");
     background-size: cover;
-    background-position: center;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 30px;
     position: relative;
+    overflow: hidden;
+    box-shadow: 40px 20px rgba(11, 85, 170, 0.342);
+    
 }
 
-.about-content{
-    background: linear-gradient(to right, rgba(229, 239, 248, 0.685), rgba(255, 255, 255, 0.918));
-    width:100%;
-    height: 100%;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;;  
-    text-align: center; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+.about-image::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139));
+    transition: 0.3s ease;
 }
 
-.about-content h2{
-    font-size: 60px;
+.about-image:hover ::before{
+    opacity: 0.7;
 }
 
+/*===Text Styling for the About===*/
+.about-text{
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif
+}
+
+.about-text h3{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #002346;
+}
+
+.about-text p{
+    font-size: 1.1rem;
+    color: #020d1d;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/*==Slide in Animation for the about Section===*/
+.slide-in-left{
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.slide-in-right{
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes slideLeft{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 #contact{
     width:100%;
     margin: 2rem auto;
     padding: 1.5rem;
     background: #f8fbfc;
     border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     color: #022242;
 }
 
@@ -361,7 +448,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     border: 2px solid #00162c;
         }
 .contact-form:hover{
@@ -401,7 +488,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 20px;
     color: #ffffff;
 }
