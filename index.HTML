@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="nav-content">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+     </nav>
+
     <!--Hello Section-->
     <header class="hello">
         <div class="overlay">
-            <nav class="nav-content">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
                 <div class="hello-content">
                 <img src="images/profile.jpg" alt="Victoria Joy M'bwana" class="profile-image">
                 <h1>Hello, I'm Victoria Joy M'bwana</h1>
@@ -74,32 +74,25 @@
     </section>
 
     <section id="contact">
-        <div class="section-heading"><h2>Get In Touch</h2></div>
+        <div class="about-heading"><h2>Get In Touch</h2></div> <!--Reusing the About Heading-->
         
             <form class="contact-form">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="mail" id="name"  name="fullname" placeholder="Your Full Name...">
+                    <input type="mail" id="name"  name="fullname" placeholder="your full name...">
 
-                </div>
-                
+                </div>   
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="text" id="email"  name="email-adress" placeholder="you@example.com...">
                 </div>
-                
 
                 <div class="form-group message-box">
                     <label for="message">Message:</label>
-                    <textarea type="submit" id="message"  placeholder="Your Message..."></textarea>
+                    <textarea type="submit" id="message"  placeholder="your message..."></textarea>
                 </div>
-                
-
-                <button type="submit">Send Message</button>
-                
-            </form>
-        
+                <button type="submit">Send Message</button>    
+            </form>  
     </section>
-
 </body>
 </html>
