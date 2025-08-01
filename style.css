@@ -33,6 +33,7 @@
     height: 60px;
 }
 
+/*Navigation Links stylels*/
 .nav-link {
     color: #00253f;
     text-decoration: none;
@@ -94,12 +95,14 @@
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*Wrap for the projects section*/
 .projects-container {
     display: flex;
     gap:40px;
     
 }
 
+/*Heading for the projects section*/
 .projects-container h1{
   flex: 1 1 60%;
   display: flex;
@@ -109,6 +112,7 @@
   color: #021936;
 }  
 
+/*The project cards styles*/
 .project-cards{
     flex: 1 1 auto;
     display: flex;
@@ -117,6 +121,7 @@
     align-items: flex-end;
 }
 
+/*Individual Project Cards*/
 .project-card{
   display: flex; 
   flex-wrap: wrap;
@@ -135,10 +140,12 @@
   transform: scale(1.09);
 }
 
+/*Defining posiition of the SIDDAM Card*/
 .card-left {
   transform: translate(-100px, -10px);
 }
 
+/*Position of the class projects card*/
 .card-right {
   transform: translate(20px, -30px);
 }
@@ -174,13 +181,14 @@
 }
 
 
-/* Responsive Flex layout for eductaion*/
+/* Responsive Flex layout for educataion*/
 #education{
     padding:60px 30px;
     background-color: #fff;
     position: relative;
 }
 
+/*eductaion heading*/
 .eductaion-heading{
     font-size: 38px;
     text-align: left;
@@ -205,6 +213,7 @@
   padding-left: 20px;
 }
 
+/*Eductaion cards before*/
 .education-cards::before{
     content: "";
     position: absolute;
@@ -237,6 +246,7 @@
     left: -20px;
   }
 }
+
 /*Container For resume Section*/
 .resume-container {
     width: 100%;
@@ -246,8 +256,7 @@
     justify-content: center;
     padding: 30px 20px;
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-    color: #011e3b;
-        }
+    color: #011e3b; }
 
   
 /*Resume fisrt ection iformation*/
@@ -309,12 +318,14 @@
     margin-bottom: 40px;
 }
 
+/*Style for both cards*/
 .experience-cards{
     position: relative;
-    border-left: 3px solid #a3ebf8bb;
+    border-left: 3px solid #070655bb;
     padding-left: 40px;
 }
 
+/*Stysle for each experience card*/
 .experience-card{
     position: relative;
     margin-bottom: 60px;
@@ -330,7 +341,7 @@
     left:-24;
     width:14px;
     height:14px;
-    background-color: #61f4ffb7;
+    background-color: #1429a0b7;
     z-index:1;
 }
 
@@ -340,8 +351,16 @@
     backdrop-filter: blur(12px);
     padding:20px;
     box-shadow: 2px 4px 10px rgba(0,0,0,1);
-    animation: slideInUp 0.6s ease both;
-    
+    animation: slideInUp 0.6s ease both;   
+}
+
+.card-content h2{
+    font-size: 3vw;
+}
+
+.card-content p,
+.card-content li{
+    font-size: 2vw;
 }
 
 @keyframes slideInUp{
@@ -365,7 +384,7 @@
 .skills-heading{
     font-size: 2.5rem;
     color:#0f172a;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3rem;
     position: relative;
 }
@@ -503,6 +522,7 @@
     animation-delay: 0.4s;
 }
 
+/*Slidding Effcets*/
 @keyframes slideLeft{
     to{
         opacity: 1;
@@ -593,6 +613,7 @@
     resize: vertical;
 }
 
+/*Buttom for the contact me form*/
 .contact-form button{
     align-self: flex-start;
     background-color: #021835be;
