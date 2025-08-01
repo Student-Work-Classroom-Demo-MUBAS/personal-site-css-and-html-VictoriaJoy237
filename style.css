@@ -173,15 +173,6 @@
     border-radius: 10px;
 }
 
-/*Heading for Experience*/
-.section-heading {
-    text-align: center;
-    font-size: 35px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family:'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; 
-    
-}
 
 /* Responsive Flex layout for eductaion*/
 #education{
@@ -191,7 +182,7 @@
 }
 
 .eductaion-heading{
-    font-size: 32px;
+    font-size: 38px;
     text-align: left;
     position: relative;
     display: inline-block;
@@ -304,39 +295,66 @@
 
     /*=====Experience scetion styling*/
 .experience-section{
-    padding:60px 20px;
+    background: linear-gradient(to right,#f8f9fa, #e0eafc);
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-    color: #011c36;
-    font-size: 30px;
-    text-align: center;
+    padding:60px 20px;
+    position: relative;
+}
+
+.experience-heading{
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
 }
 
 .experience-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: centre;
-    gap:40px;
+    position: relative;
+    border-left: 3px solid #a3ebf8bb;
+    padding-left: 40px;
 }
 
 .experience-card{
-    background-color: #fffffffa;
-    border: 2px solid #001c38;
-    border-radius: 20px;
-    width: 400px;
-    padding: 20px;
-    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 60px;
 }
 
 .experience-card:hover{
     transform: scale(1.06);
 }
 
-.experience-card ul{
-    list-style-type:circle;
-    padding-left: 20px;
-    text-align: left;
+.role-dot{
+    position: absolute;
+    top:20px;
+    left:-24;
+    width:14px;
+    height:14px;
+    background-color: #61f4ffb7;
+    z-index:1;
 }
 
+.card-content{
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    padding:20px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,1);
+    animation: slideInUp 0.6s ease both;
+    
+}
+
+@keyframes slideInUp{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform: translate(0);
+    }
+}
 /*===Skills section styling===*/
 /*=Wrap for Entire Skills Section*/
 .skills-section{
