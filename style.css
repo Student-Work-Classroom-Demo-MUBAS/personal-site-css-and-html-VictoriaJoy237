@@ -143,6 +143,7 @@
   transform: translate(20px, -30px);
 }
 
+/*Porjects Cards Rensposniveness*/
 @media screen and (max-width: 768px) {
   .projects-container {
     flex-direction: column;
@@ -172,7 +173,7 @@
     border-radius: 10px;
 }
 
-/*Heading for Eduction and Skills*/
+/*Heading for Experience*/
 .section-heading {
     text-align: center;
     font-size: 35px;
@@ -182,31 +183,69 @@
     
 }
 
-/* Responsive Flex layout for project cards */
+/* Responsive Flex layout for eductaion*/
+#education{
+    padding:60px 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.eductaion-heading{
+    font-size: 32px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+/*Education Cards Wrapper*/
 .education-sections {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    gap:40px;
+    position: relative;
+    border-left:3px solid #3d6eca;
+    padding-left: 40px;
 }
 
+/*Individual Cards Styles*/
 .education-cards {
-    width: 320px;
-    border: 2px solid #0c3757;
-    background: #ffffff;
-    border-radius: 20%;
-    padding: 1rem;
-    text-align: center;
-    font-size: 23px;
+  position: relative;
+  padding-left: 20px;
 }
 
-/* Project Card Hover Effect for it to scale */
-.education-cards:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease; 
-    background: #d8e8f786;  
+.education-cards::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -28px;
+    height: 14px;
+    background: #3d6eca;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 2px #fff;
 }
 
+.education-cards h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.education-cards p{
+    margin:4px 0;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+/*Rensposivness for eductaion Section*/
+@media (max-width: 768px) {
+  .education-sections {
+    padding-left: 20px;
+  }
+
+  .education-cards::before {
+    left: -20px;
+  }
+}
 /*Container For resume Section*/
 .resume-container {
     width: 100%;
