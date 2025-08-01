@@ -204,7 +204,7 @@
 .education-cards:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease; 
-    background: #c4dcf3c0;  
+    background: #d8e8f786;  
 }
 
 /*Container For resume Section*/
@@ -298,34 +298,58 @@
     text-align: left;
 }
 
+/*===Skills section styling===*/
+/*=Wrap for Entire Skills Section*/
 .skills-section{
-    text-align: center;
-    color: #00162c;
-    font-size: 20px;
+    background: #f5f8fa;
+    padding: 4rem 4rem;
 }
 
+.skills-heading{
+    font-size: 2.5rem;
+    color:#0f172a;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/*Grid Layout for skills items*/
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    padding:20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:2.5rem;
+    justify-items: center;
+    width:100%;
 }
 
+/*Skill Crads styles*/
 .skill{
-    background-color: #dce9f7b4;
-    border-radius: 15px;
-    padding:25px;
-    box-shadow: 8px 16px rgba(9, 2, 34, 0.411);
+    background:rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding:2rem 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .skill img{
     width:160px;
     height:150px;
-    margin-bottom: 20px;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 
 .skill:hover{
-    transform: scale(1.09);
+    transform: translateY(-10px);
+    box-shadow: 25px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background:#ecf5fdb2
+}
+
+.skill h3{
+    font-size: 2rem;
+    color:#0f172a;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 /*===About Me Scetion Styling===*/
